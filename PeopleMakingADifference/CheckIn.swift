@@ -29,7 +29,7 @@ class CheckIn: UIViewController
     }
     
     
-    //Exits keyboard on "done" in Room Code textfield
+   //Exits keyboard on "done" in Room Code textfield
    
    @IBAction func roomTextFieldEditingDidEnd(sender: AnyObject)
    {
@@ -150,7 +150,7 @@ class CheckIn: UIViewController
                      
                         //get tabBarController if there is one, and then change the view to index 1 (which is the second view controller
                         self.tabBarController?.selectedIndex = 1
-            
+                     
                   	   //Pulls out Volunteers Info
                   	   var vName = (object["Name"] as String)
                   	   var eName = "PMD"
@@ -163,7 +163,7 @@ class CheckIn: UIViewController
                   	   var lunch = (object["Lunch"] as String)
 
                      
-                     
+                        //HERE!!
                   	   //This code will run the displayInfo func
                   	   (self.tabBarController?.viewControllers?[1] as MyAssignment).displayInfo(vName, eName: eName, ciTime: cTime, sSTime: sBegin, sETime: sEnd, vTask: myTask, rAss: roomNum, sSize: tSize, lunch: lunch)
                         

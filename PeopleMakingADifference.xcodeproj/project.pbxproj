@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A14307BC1A84205B008AED74 /* Volunteer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14307BB1A84205B008AED74 /* Volunteer.swift */; };
 		A1C32ED81A03148300E5A376 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C32ED71A03148300E5A376 /* SystemConfiguration.framework */; };
 		A1C32EDD1A03155300E5A376 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C32EDA1A03155300E5A376 /* Bolts.framework */; };
 		A1C32EDE1A03155300E5A376 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C32EDB1A03155300E5A376 /* Parse.framework */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A14307BB1A84205B008AED74 /* Volunteer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Volunteer.swift; sourceTree = "<group>"; };
 		A1C32ED71A03148300E5A376 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A1C32EDA1A03155300E5A376 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		A1C32EDB1A03155300E5A376 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				A1CF226019FD50B200024E11 /* LaunchScreen.xib */,
 				A1CF225319FD50B200024E11 /* Supporting Files */,
 				A1C32EF21A0316C900E5A376 /* PeopleMakingADifference-Bridging-Header.h */,
+				A14307BB1A84205B008AED74 /* Volunteer.swift */,
 			);
 			path = PeopleMakingADifference;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				A1CF22AE19FD8FAF00024E11 /* CheckOut.swift in Sources */,
 				A1CF225619FD50B200024E11 /* AppDelegate.swift in Sources */,
 				A1CF225819FD50B200024E11 /* CheckIn.swift in Sources */,
+				A14307BC1A84205B008AED74 /* Volunteer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

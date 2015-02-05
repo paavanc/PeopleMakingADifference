@@ -25,7 +25,7 @@ class MyAssignment: UIViewController, UITableViewDelegate//, UITableViewDataSour
     
    var pantone: UIColor = UIColor(red: 0, green: 134/255.0, blue: 117/255.0, alpha: 0)
   
-  
+   //an array of string variables called "items"
    var items: [String] = ["Volunteer Name", "Event Name", "Check In Time", "Arrival Time", "Departure Time", "Task", "Room Assignment", "Shirt Size", "Lunch"]
   
    func displayInfo(vName: String, eName: String, ciTime: String, sSTime: String, sETime: String, vTask : String, rAss : String, sSize: String, lunch:String) -> Void
@@ -40,7 +40,6 @@ class MyAssignment: UIViewController, UITableViewDelegate//, UITableViewDataSour
    func clearInfo() -> Void
    {
       self.items = ["Volunteer Name", "Event Name", "Check In Time", "Arrival Time", "Departure Time", "Task", "Room Assignment", "Shirt Size", "Lunch"]
-      //tableview.reloadData()
    }
    
    override func viewDidLoad()
@@ -59,20 +58,6 @@ class MyAssignment: UIViewController, UITableViewDelegate//, UITableViewDataSour
         var alertMessage = UIAlertView(title: nil, message: "Thank you! You have been successfully checked in.", delegate: nil, cancelButtonTitle: "Let's Get Started!")
         alertMessage.show()
     }
-   /*
-   func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
-   {
-      return self.items.count;
-   }
-
-   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
-   {
-      var cell:UITableViewCell = self.tableview.dequeueReusableCellWithIdentifier("cell") as UITableViewCell
-
-      cell.textLabel?.text = self.items[indexPath.row]
-      return cell
-   }
-    */
     
     func numberOfSectionsInTableView(tableView: UITableView!) -> Int
     {
@@ -83,10 +68,10 @@ class MyAssignment: UIViewController, UITableViewDelegate//, UITableViewDataSour
     {
         return self.items.count
     }
-    
+   
+   
     func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell!
     {
-        //let cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier(cIdentifier, forIndexPath: indexPath) as UITableViewCell
         let cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier("cIdentifier", forIndexPath: indexPath) as UITableViewCell
         cell.textLabel?.text = items[indexPath.row]
         cell.textLabel?.numberOfLines = 0;
@@ -94,8 +79,7 @@ class MyAssignment: UIViewController, UITableViewDelegate//, UITableViewDataSour
         cell.textLabel?.font = UIFont(name: "Helvetica", size: 18.0)
         tableView.backgroundColor = pantone
         cell.backgroundColor = UIColor.clearColor()
-        
-        
+      
         return cell
     }
 
