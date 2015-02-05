@@ -20,10 +20,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Room Code" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZHt-wb-qND">
-                                <rect key="frame" x="81" y="419" width="207" height="30"/>
+                                <rect key="frame" x="81" y="419" width="214" height="30"/>
                                 <color key="tintColor" red="0.0" green="0.52549019607843139" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="207" id="khg-v0-zSN"/>
+                                    <constraint firstAttribute="width" constant="214" id="khg-v0-zSN"/>
                                     <constraint firstAttribute="height" constant="30" id="uXh-UU-N28"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -46,11 +46,11 @@ DIFFERENCE®</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AWu-z1-AHT">
-                                <rect key="frame" x="81" y="384" width="207" height="30"/>
+                                <rect key="frame" x="81" y="384" width="214" height="30"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="BHq-Yo-J67"/>
-                                    <constraint firstAttribute="width" constant="207" id="e5M-ZS-qde"/>
+                                    <constraint firstAttribute="width" constant="214" id="e5M-ZS-qde"/>
                                 </constraints>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -88,7 +88,7 @@ DIFFERENCE®</string>
                         </subviews>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="ZHt-wb-qND" secondAttribute="centerX" constant="3" id="2aX-L7-5c7"/>
+                            <constraint firstAttribute="centerX" secondItem="ZHt-wb-qND" secondAttribute="centerX" constant="-0.5" id="2aX-L7-5c7"/>
                             <constraint firstItem="vYm-ns-87V" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="5lb-pS-JNL"/>
                             <constraint firstAttribute="centerX" secondItem="45X-tq-KLJ" secondAttribute="centerX" id="8x6-b7-ca4"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="vYm-ns-87V" secondAttribute="bottom" id="D6D-bz-RBP"/>
@@ -98,7 +98,7 @@ DIFFERENCE®</string>
                             <constraint firstAttribute="centerX" secondItem="tqj-16-5iQ" secondAttribute="centerX" id="hH2-mG-kBh"/>
                             <constraint firstAttribute="bottom" secondItem="tqj-16-5iQ" secondAttribute="bottom" constant="75" id="hIV-4g-n4a"/>
                             <constraint firstItem="45X-tq-KLJ" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" id="lIy-s0-d6k"/>
-                            <constraint firstAttribute="centerX" secondItem="AWu-z1-AHT" secondAttribute="centerX" constant="3" id="rFe-dI-ysQ"/>
+                            <constraint firstAttribute="centerX" secondItem="AWu-z1-AHT" secondAttribute="centerX" constant="-0.5" id="rFe-dI-ysQ"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="tqj-16-5iQ" secondAttribute="bottom" constant="26" id="rNA-fD-gGl"/>
                             <constraint firstItem="ZHt-wb-qND" firstAttribute="top" secondItem="AWu-z1-AHT" secondAttribute="bottom" constant="5" id="tpm-3g-Vva"/>
                             <constraint firstItem="vYm-ns-87V" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="xRt-UM-aqr"/>

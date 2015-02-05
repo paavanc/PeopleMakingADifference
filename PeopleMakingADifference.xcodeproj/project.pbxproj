@@ -145,6 +145,7 @@
 		A1CF225219FD50B200024E11 /* PeopleMakingADifference */ = {
 			isa = PBXGroup;
 			children = (
+				A14307BB1A84205B008AED74 /* Volunteer.swift */,
 				A1CF225519FD50B200024E11 /* AppDelegate.swift */,
 				A1CF225719FD50B200024E11 /* CheckIn.swift */,
 				A1CF225919FD50B200024E11 /* MyAssignment.swift */,
@@ -154,7 +155,6 @@
 				A1CF226019FD50B200024E11 /* LaunchScreen.xib */,
 				A1CF225319FD50B200024E11 /* Supporting Files */,
 				A1C32EF21A0316C900E5A376 /* PeopleMakingADifference-Bridging-Header.h */,
-				A14307BB1A84205B008AED74 /* Volunteer.swift */,
 			);
 			path = PeopleMakingADifference;
 			sourceTree = "<group>";
