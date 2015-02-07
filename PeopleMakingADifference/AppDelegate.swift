@@ -17,6 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
       // Override point for customization after application launch.
       
+      UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.BlackOpaque, animated: true)
+      
       Parse.setApplicationId("Vy2irAfn5oSNej6OqOOHctSkTBbWu2IUrjMRK1VC", clientKey:"OGEPDTxyek47GTRCzjU83CpkLrpxUZHdwtKx9tAi")
       
       return true
