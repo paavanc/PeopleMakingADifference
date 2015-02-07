@@ -11,10 +11,13 @@ import Parse
 
 class CheckIn: UIViewController
 {
+   //PMD EVENT NAME, CAN BE CHANGED HERE TO OBTAIN DATA FROM SPECIFIC PARSE DATASHEET
+   var pmdEventName = "SchoolCleaning"
    
+
+   //UIViews
    @IBOutlet weak var emailTextField: UITextField!
    @IBOutlet weak var roomcodeTextField: UITextField!
-   //@IBOutlet weak var welcomeMessage: UILabel!
    @IBOutlet weak var timeLabel: UILabel!
 
    override func viewDidLoad()
@@ -29,7 +32,7 @@ class CheckIn: UIViewController
     }
     
     
-    //Exits keyboard on "done" in Room Code textfield
+   //Exits keyboard on "done" in Room Code textfield
    
    @IBAction func roomTextFieldEditingDidEnd(sender: AnyObject)
    {
@@ -101,7 +104,7 @@ class CheckIn: UIViewController
    @IBAction func checkInSubmit(sender: AnyObject)
    {
       //check the Room Code
-        var query = PFQuery(className:"SchoolCleaning")
+        var query = PFQuery(className:pmdEventName)
         query.whereKey("roomCode", equalTo:roomcodeTextField.text)
         query.getFirstObjectInBackgroundWithBlock 
         {
@@ -111,7 +114,7 @@ class CheckIn: UIViewController
             {
                
                 //check if the email exists
-                var queryTwo = PFQuery(className:"SchoolCleaning")
+                var queryTwo = PFQuery(className:self.pmdEventName)
                 queryTwo.whereKey("Email", equalTo:self.emailTextField.text)
                 queryTwo.getFirstObjectInBackgroundWithBlock 
                 {
@@ -119,11 +122,9 @@ class CheckIn: UIViewController
                     //THE EMAIL EXISTS
                     if object != nil 
                     {
-                       
                        	// SAVE THE ARRIVAL TIME TO DATABASE
-                        var timeUpdate = PFObject(className:"SchoolCleaning")
-                        var query = PFQuery(className:"SchoolCleaning")
-                        
+                        var timeUpdate = PFObject(className:self.pmdEventName)
+                        var query = PFQuery(className:self.pmdEventName)
                         query.getObjectInBackgroundWithId(object.objectId) 
                         {
                             (timeUpdate: PFObject!, error: NSError!) -> Void in
@@ -133,16 +134,12 @@ class CheckIn: UIViewController
                             } 
                             else 
                             {
-                        
-                                
-                                if (object["ArrivalTime"] == nil){
-                                timeUpdate["ArrivalTime"]=self.getCurrentTimeDate()
-                          
-                                timeUpdate.saveEventually()
+                                if (object["ArrivalTime"] == nil)
+                                {
+                                    timeUpdate["ArrivalTime"]=self.getCurrentTimeDate()
+                                    timeUpdate.saveEventually()
                                 }
-                                //NSlog ("Ketchup")
-                                
-                               
+
                             }
                    	 	}
                         
@@ -150,26 +147,21 @@ class CheckIn: UIViewController
                      
                         //get tabBarController if there is one, and then change the view to index 1 (which is the second view controller
                         self.tabBarController?.selectedIndex = 1
-            
-                  	   //Pulls out Volunteers Info
-                  	   var vName = (object["Name"] as String)
-                  	   var eName = "PMD"
-                  	   var cTime = self.getCurrentTime()
-                  	   var sBegin = (object["shiftStarts"] as String)
-                  	   var sEnd = (object["shiftEnds"] as String)
-                  	   var myTask  = (object["Assignment"] as String)
-                  	   var roomNum = (object["Room"] as String)
-                  	   var tSize = (object["tShirtSize"] as String)
-                  	   var lunch = (object["Lunch"] as String)
-
+                     
+                        //Creates an instance of Volunteer which contain all area of info, grabbed from Parse
+                        var pmdVolunteer = Volunteer(volunteerName: (object["Name"] as String), eventName: "PMD", checkInTime: self.getCurrentTime(), arrivalTime: (object["shiftStarts"] as String), departureTime: (object["shiftEnds"] as String), task: (object["Assignment"] as String), roomAssignment: (object["Room"] as String), shirtSize: (object["tShirtSize"] as String), lunch: (object["Lunch"] as String))
+                     
+                                    
+                  	   //Calls the displayInfo method on the MyAssignments page
+                        (self.tabBarController?.viewControllers?[1] as MyAssignment).loadData(pmdVolunteer.volunteerName, eName: pmdVolunteer.eventName, ciTime: pmdVolunteer.checkInTime, sSTime: pmdVolunteer.arrivalTime, sETime: pmdVolunteer.departureTime, vTask: pmdVolunteer.task, rAss: pmdVolunteer.roomAssignment, sSize: pmdVolunteer.shirtSize, lunch: pmdVolunteer.lunch)
+                     
+                        //Write a method or find the class method of UITextLabel to clear the info enter
+                        //
+                        //
                      
                      
-                  	   //This code will run the displayInfo func
-                  	   (self.tabBarController?.viewControllers?[1] as MyAssignment).displayInfo(vName, eName: eName, ciTime: cTime, sSTime: sBegin, sETime: sEnd, vTask: myTask, rAss: roomNum, sSize: tSize, lunch: lunch)
-                        
+                        //Calls the successfulCheckInPopUp method on the MyAssignments page
                         (self.tabBarController?.viewControllers?[1] as MyAssignment).successCheckInPopUp()
-         
-                  	  //self.welcomeMessage.text = "Enjoy the event!"
                         
                     }
                     //IF EMAIL DOESNT EXIST 
@@ -178,8 +170,6 @@ class CheckIn: UIViewController
                         //To create a pop up alert message
                         var alertMessage = UIAlertView(title: "ERROR", message: "Invalid E-mail Address", delegate: nil, cancelButtonTitle: "Try Again")
                         alertMessage.show()
-      
-                       // self.welcomeMessage.text="Invalid email address"
                        
                     }
             	}
@@ -189,7 +179,6 @@ class CheckIn: UIViewController
             {
                 var alertMessage = UIAlertView(title: "ERROR", message: "Invalid Room Code", delegate: nil, cancelButtonTitle: "Try Again")
                 alertMessage.show()
-                //self.welcomeMessage.text="Incorrect room code."
             }
            
          }

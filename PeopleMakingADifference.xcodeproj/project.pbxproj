@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A14307BC1A84205B008AED74 /* Volunteer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14307BB1A84205B008AED74 /* Volunteer.swift */; };
 		A1C32ED81A03148300E5A376 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C32ED71A03148300E5A376 /* SystemConfiguration.framework */; };
 		A1C32EDD1A03155300E5A376 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C32EDA1A03155300E5A376 /* Bolts.framework */; };
 		A1C32EDE1A03155300E5A376 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C32EDB1A03155300E5A376 /* Parse.framework */; };
@@ -20,6 +21,7 @@
 		A1C32EED1A0315AE00E5A376 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C32EEC1A0315AE00E5A376 /* QuartzCore.framework */; };
 		A1C32EEF1A0315C800E5A376 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C32EEE1A0315C800E5A376 /* Security.framework */; };
 		A1C32EF11A0315D200E5A376 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C32EF01A0315D200E5A376 /* StoreKit.framework */; };
+		A1CB498F1A852812002E1C25 /* myAssignmentHeadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CB498E1A852812002E1C25 /* myAssignmentHeadCell.swift */; };
 		A1CF225619FD50B200024E11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CF225519FD50B200024E11 /* AppDelegate.swift */; };
 		A1CF225819FD50B200024E11 /* CheckIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CF225719FD50B200024E11 /* CheckIn.swift */; };
 		A1CF225A19FD50B200024E11 /* MyAssignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CF225919FD50B200024E11 /* MyAssignment.swift */; };
@@ -41,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A14307BB1A84205B008AED74 /* Volunteer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Volunteer.swift; sourceTree = "<group>"; };
 		A1C32ED71A03148300E5A376 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A1C32EDA1A03155300E5A376 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		A1C32EDB1A03155300E5A376 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
@@ -55,6 +58,7 @@
 		A1C32EEE1A0315C800E5A376 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		A1C32EF01A0315D200E5A376 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		A1C32EF21A0316C900E5A376 /* PeopleMakingADifference-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PeopleMakingADifference-Bridging-Header.h"; sourceTree = "<group>"; };
+		A1CB498E1A852812002E1C25 /* myAssignmentHeadCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = myAssignmentHeadCell.swift; path = ../myAssignmentHeadCell.swift; sourceTree = "<group>"; };
 		A1CF225019FD50B200024E11 /* PeopleMakingADifference.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeopleMakingADifference.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1CF225419FD50B200024E11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1CF225519FD50B200024E11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +147,8 @@
 		A1CF225219FD50B200024E11 /* PeopleMakingADifference */ = {
 			isa = PBXGroup;
 			children = (
+				A1CB498E1A852812002E1C25 /* myAssignmentHeadCell.swift */,
+				A14307BB1A84205B008AED74 /* Volunteer.swift */,
 				A1CF225519FD50B200024E11 /* AppDelegate.swift */,
 				A1CF225719FD50B200024E11 /* CheckIn.swift */,
 				A1CF225919FD50B200024E11 /* MyAssignment.swift */,
@@ -283,8 +289,10 @@
 			files = (
 				A1CF225A19FD50B200024E11 /* MyAssignment.swift in Sources */,
 				A1CF22AE19FD8FAF00024E11 /* CheckOut.swift in Sources */,
+				A1CB498F1A852812002E1C25 /* myAssignmentHeadCell.swift in Sources */,
 				A1CF225619FD50B200024E11 /* AppDelegate.swift in Sources */,
 				A1CF225819FD50B200024E11 /* CheckIn.swift in Sources */,
+				A14307BC1A84205B008AED74 /* Volunteer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

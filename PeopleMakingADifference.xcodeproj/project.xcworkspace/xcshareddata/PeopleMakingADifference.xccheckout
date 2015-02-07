@@ -10,31 +10,31 @@
 	<string>PeopleMakingADifference</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>96050DD80C945034358C07C45E2A3E03A1A714BD</key>
-		<string>https://github.com/paavanc/PeopleMakingADifference.git</string>
+		<key>8538E9FCD86DDE97E042E86201DAB437043407D1</key>
+		<string>https://github.com/btan3/PeopleMakingADifference-1.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Desktop/PeopleMakingADifference2B/PeopleMakingADifference.xcodeproj</string>
+	<string>PeopleMakingADifference.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>96050DD80C945034358C07C45E2A3E03A1A714BD</key>
-		<string>../../../..</string>
+		<key>8538E9FCD86DDE97E042E86201DAB437043407D1</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/paavanc/PeopleMakingADifference.git</string>
+	<string>https://github.com/btan3/PeopleMakingADifference-1.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>96050DD80C945034358C07C45E2A3E03A1A714BD</string>
+	<string>8538E9FCD86DDE97E042E86201DAB437043407D1</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>96050DD80C945034358C07C45E2A3E03A1A714BD</string>
+			<string>8538E9FCD86DDE97E042E86201DAB437043407D1</string>
 			<key>IDESourceControlWCCName</key>
-			<string>PeopleMakingADifference</string>
+			<string>PeopleMakingADifference-1</string>
 		</dict>
 	</array>
 </dict>
