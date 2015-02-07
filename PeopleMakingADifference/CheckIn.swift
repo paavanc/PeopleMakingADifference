@@ -153,7 +153,7 @@ class CheckIn: UIViewController
                      
                                     
                   	   //Calls the displayInfo method on the MyAssignments page
-                        (self.tabBarController?.viewControllers?[1] as MyAssignment).displayInfo(pmdVolunteer.volunteerName, eName: pmdVolunteer.eventName, ciTime: pmdVolunteer.checkInTime, sSTime: pmdVolunteer.arrivalTime, sETime: pmdVolunteer.departureTime, vTask: pmdVolunteer.task, rAss: pmdVolunteer.roomAssignment, sSize: pmdVolunteer.shirtSize, lunch: pmdVolunteer.lunch)
+                        (self.tabBarController?.viewControllers?[1] as MyAssignment).loadData(pmdVolunteer.volunteerName, eName: pmdVolunteer.eventName, ciTime: pmdVolunteer.checkInTime, sSTime: pmdVolunteer.arrivalTime, sETime: pmdVolunteer.departureTime, vTask: pmdVolunteer.task, rAss: pmdVolunteer.roomAssignment, sSize: pmdVolunteer.shirtSize, lunch: pmdVolunteer.lunch)
                      
                         //Write a method or find the class method of UITextLabel to clear the info enter
                         //
