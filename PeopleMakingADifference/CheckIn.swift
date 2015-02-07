@@ -155,10 +155,8 @@ class CheckIn: UIViewController
                   	   //Calls the displayInfo method on the MyAssignments page
                         (self.tabBarController?.viewControllers?[1] as MyAssignment).loadData(pmdVolunteer.volunteerName, eName: pmdVolunteer.eventName, ciTime: pmdVolunteer.checkInTime, sSTime: pmdVolunteer.arrivalTime, sETime: pmdVolunteer.departureTime, vTask: pmdVolunteer.task, rAss: pmdVolunteer.roomAssignment, sSize: pmdVolunteer.shirtSize, lunch: pmdVolunteer.lunch)
                      
-                        //Write a method or find the class method of UITextLabel to clear the info enter
-                        //
-                        //
-                     
+                        //Clears textfields of Log In page upon successful check in
+                        self.clearTextFields()
                      
                         //Calls the successfulCheckInPopUp method on the MyAssignments page
                         (self.tabBarController?.viewControllers?[1] as MyAssignment).successCheckInPopUp()

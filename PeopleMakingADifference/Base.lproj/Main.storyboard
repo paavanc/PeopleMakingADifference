@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -42,7 +43,7 @@
                                 <string key="text">PEOPLE 
 MAKING A
 DIFFERENCE®</string>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="40"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -152,8 +153,14 @@ DIFFERENCE®</string>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GWZ-OI-6WT">
-                                                    <rect key="frame" x="149" y="198" width="76" height="35"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="29"/>
+                                                    <rect key="frame" x="151" y="177" width="74" height="35"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="slQ-Fm-Igw">
+                                                    <rect key="frame" x="166" y="220" width="44" height="22"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="18"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -161,23 +168,27 @@ DIFFERENCE®</string>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="GWZ-OI-6WT" secondAttribute="bottom" constant="35" id="0xu-ji-ufs"/>
                                                 <constraint firstItem="d2M-rE-VeR" firstAttribute="top" secondItem="aTk-Oo-J6p" secondAttribute="top" id="1YP-cw-oCZ"/>
+                                                <constraint firstAttribute="centerX" secondItem="slQ-Fm-Igw" secondAttribute="centerX" id="2qP-pO-GUR"/>
                                                 <constraint firstAttribute="trailing" secondItem="d2M-rE-VeR" secondAttribute="trailing" id="46B-vQ-utg"/>
                                                 <constraint firstAttribute="bottom" secondItem="d2M-rE-VeR" secondAttribute="bottom" constant="16" id="AAn-xE-TJy"/>
                                                 <constraint firstItem="d2M-rE-VeR" firstAttribute="leading" secondItem="aTk-Oo-J6p" secondAttribute="leading" id="Bry-7V-hJ2"/>
                                                 <constraint firstItem="GWZ-OI-6WT" firstAttribute="top" secondItem="aTk-Oo-J6p" secondAttribute="top" constant="181" id="Ctf-B4-TYX"/>
                                                 <constraint firstAttribute="bottom" secondItem="d2M-rE-VeR" secondAttribute="bottom" id="DEb-8U-vzn"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="d2M-rE-VeR" secondAttribute="trailing" id="DfO-f0-CJX"/>
+                                                <constraint firstItem="slQ-Fm-Igw" firstAttribute="top" secondItem="GWZ-OI-6WT" secondAttribute="bottom" constant="8" id="ExM-35-kIA"/>
+                                                <constraint firstAttribute="bottom" secondItem="GWZ-OI-6WT" secondAttribute="bottom" constant="57" id="IgN-ei-s6Q"/>
                                                 <constraint firstItem="d2M-rE-VeR" firstAttribute="leading" secondItem="aTk-Oo-J6p" secondAttribute="leadingMargin" id="JoZ-3L-kKc"/>
                                                 <constraint firstAttribute="centerY" secondItem="GWZ-OI-6WT" secondAttribute="centerY" id="KC6-he-YjY"/>
                                                 <constraint firstAttribute="centerY" secondItem="GWZ-OI-6WT" secondAttribute="centerY" constant="-23.5" id="Kut-Tn-XQe"/>
-                                                <constraint firstAttribute="bottom" secondItem="GWZ-OI-6WT" secondAttribute="bottom" constant="36" id="Lss-g2-myr"/>
+                                                <constraint firstAttribute="bottom" secondItem="GWZ-OI-6WT" secondAttribute="bottom" constant="18" id="Lss-g2-myr"/>
                                                 <constraint firstAttribute="bottom" secondItem="GWZ-OI-6WT" secondAttribute="bottom" constant="87" id="NNT-0I-VJV"/>
                                                 <constraint firstAttribute="bottom" secondItem="GWZ-OI-6WT" secondAttribute="bottom" constant="35" id="NxU-DU-g1a"/>
                                                 <constraint firstItem="GWZ-OI-6WT" firstAttribute="leading" secondItem="aTk-Oo-J6p" secondAttribute="leading" constant="158" id="Riy-GH-E7h"/>
                                                 <constraint firstAttribute="trailing" secondItem="d2M-rE-VeR" secondAttribute="trailing" id="RpP-na-0MH"/>
-                                                <constraint firstAttribute="centerX" secondItem="GWZ-OI-6WT" secondAttribute="centerX" id="SQA-Lj-fbf"/>
+                                                <constraint firstAttribute="centerX" secondItem="GWZ-OI-6WT" secondAttribute="centerX" constant="127.5" id="SQA-Lj-fbf"/>
                                                 <constraint firstItem="d2M-rE-VeR" firstAttribute="leading" secondItem="aTk-Oo-J6p" secondAttribute="leading" id="Syu-Yj-W8g"/>
                                                 <constraint firstAttribute="bottom" secondItem="d2M-rE-VeR" secondAttribute="bottom" id="U6s-SP-zJ4"/>
+                                                <constraint firstItem="GWZ-OI-6WT" firstAttribute="leading" secondItem="aTk-Oo-J6p" secondAttribute="leading" constant="22" id="VdU-gz-b5V"/>
                                                 <constraint firstAttribute="centerX" secondItem="GWZ-OI-6WT" secondAttribute="centerX" id="Yal-Ar-67K"/>
                                                 <constraint firstItem="GWZ-OI-6WT" firstAttribute="top" secondItem="aTk-Oo-J6p" secondAttribute="top" constant="107" id="Yp9-rL-6NB"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="d2M-rE-VeR" secondAttribute="bottom" id="Zal-iY-Nhx"/>
@@ -197,6 +208,7 @@ DIFFERENCE®</string>
                                                 <constraint firstItem="d2M-rE-VeR" firstAttribute="top" secondItem="aTk-Oo-J6p" secondAttribute="topMargin" id="sWr-Eo-Emo"/>
                                                 <constraint firstAttribute="trailing" secondItem="d2M-rE-VeR" secondAttribute="trailing" id="ueB-qI-l45"/>
                                                 <constraint firstItem="d2M-rE-VeR" firstAttribute="leading" secondItem="aTk-Oo-J6p" secondAttribute="leading" constant="23" id="xsa-dv-dHi"/>
+                                                <constraint firstAttribute="centerX" secondItem="GWZ-OI-6WT" secondAttribute="centerX" id="yBg-Fh-PJ4"/>
                                                 <constraint firstAttribute="trailing" secondItem="d2M-rE-VeR" secondAttribute="trailing" constant="24" id="yWH-Zg-afH"/>
                                             </constraints>
                                             <variation key="default">
@@ -223,9 +235,12 @@ DIFFERENCE®</string>
                                                     <exclude reference="Ctf-B4-TYX"/>
                                                     <exclude reference="KC6-he-YjY"/>
                                                     <exclude reference="Kut-Tn-XQe"/>
+                                                    <exclude reference="Lss-g2-myr"/>
                                                     <exclude reference="NNT-0I-VJV"/>
                                                     <exclude reference="NxU-DU-g1a"/>
                                                     <exclude reference="Riy-GH-E7h"/>
+                                                    <exclude reference="SQA-Lj-fbf"/>
+                                                    <exclude reference="VdU-gz-b5V"/>
                                                     <exclude reference="Yal-Ar-67K"/>
                                                     <exclude reference="Yp9-rL-6NB"/>
                                                     <exclude reference="a51-qU-Vyy"/>
@@ -242,6 +257,7 @@ DIFFERENCE®</string>
                                         <connections>
                                             <outlet property="headerImage" destination="d2M-rE-VeR" id="4JD-ja-6Lf"/>
                                             <outlet property="headerMessage" destination="GWZ-OI-6WT" id="kFd-tL-5Tj"/>
+                                            <outlet property="headerWelcome" destination="slQ-Fm-Igw" id="LMX-QL-8b8"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cIdentifier" rowHeight="92" id="4zb-tM-MPj">
@@ -257,13 +273,13 @@ DIFFERENCE®</string>
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="People Making a Difference" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bq7-UD-G7D">
-                                <rect key="frame" x="83" y="44" width="209" height="20"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="64" y="44" width="247" height="25"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="21"/>
+                                <color key="textColor" red="0.098039215690000001" green="0.36862745099999999" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.098039215686274508" green="0.36862745098039218" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="GWb-an-oCA" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="52" id="3uF-uE-ZTD"/>
                             <constraint firstItem="GWb-an-oCA" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="8CK-6c-xAw"/>
@@ -288,7 +304,7 @@ DIFFERENCE®</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="913.5" y="-50.5"/>
+            <point key="canvasLocation" x="913.5" y="-51.5"/>
         </scene>
         <!--Check Out-->
         <scene sceneID="ubb-8D-18L">
@@ -354,7 +370,7 @@ DIFFERENCE®</string>
                                     <constraint firstAttribute="width" constant="288" id="WqJ-aY-ecF"/>
                                     <constraint firstAttribute="height" constant="154" id="j0b-Ri-Tcf"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="40"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
