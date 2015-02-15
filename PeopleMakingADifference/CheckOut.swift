@@ -32,10 +32,13 @@ class CheckOut: UIViewController, UITextFieldDelegate
     
     func textFieldShouldReturn(textField: UITextField) -> Bool
     {
-        if textField == checkoutEmailTextField {
+        if textField == checkoutEmailTextField
+        {
             textField.resignFirstResponder()
             checkoutRoomTextField.becomeFirstResponder()
-        } else {
+        }
+        else
+        {
             textField.resignFirstResponder()
             
         }
@@ -161,51 +164,60 @@ class CheckOut: UIViewController, UITextFieldDelegate
                                         var TotalMins = Double(minute) - Double(minuteOut)
                                        
                                        
-                                        if TotalMins < 7{
+                                        if TotalMins < 7
+                                        {
                                             TotalMins=0
                                         }
                                        
-                                        if (TotalMins > 7 && TotalMins < 15){
+                                        else if (TotalMins > 7 && TotalMins < 15)
+                                        {
                                             TotalMins=15
                                         }
                                        
-                                        if (TotalMins > 15 && TotalMins < 22){
+                                        else if (TotalMins > 15 && TotalMins < 22)
+                                        {
                                             TotalMins = 15
                                         }
                                        
-                                        if (TotalMins > 22 && TotalMins < 30){
+                                        else if (TotalMins > 22 && TotalMins < 30)
+                                        {
                                             TotalMins = 30
                                         }
                                        
-                                        if (TotalMins > 30 && TotalMins < 37){
+                                        else if (TotalMins > 30 && TotalMins < 37)
+                                        {
                                             TotalMins = 30
                                         }
-                                        if (TotalMins > 37 && TotalMins < 45){
+                                        else if (TotalMins > 37 && TotalMins < 45)
+                                        {
                                             TotalMins = 45
                                         }
-                                        if (TotalMins > 45 && TotalMins < 52){
-                                            TotalMins = 45
+                                        else if (TotalMins > 45 && TotalMins < 52)
+                                        {
+                                           TotalMins = 45
                                         }
                                        
-                                        if (TotalMins > 52 && TotalMins < 60){
+                                        else if (TotalMins > 52 && TotalMins < 60)
+                                        {
                                             TotalMins = 0
                                             TotalHours=TotalHours + 1
                                         }
                                         var HourFraction=Double (TotalMins)
-                                        //var HourFraction=Double (TotalMins)*(1.0/60.0)
                                         var TotalTimeNumber=Double(TotalHours) + HourFraction
                                         timeUpdate["TotalTime"]=TotalTimeNumber
                                         timeUpdate.saveEventually()
                                        
                                     }
                                         
-                                       else {
-                                        //To create a pop up alert message
-                                        var alertMessage = UIAlertView(title: "Note", message: "You have already checked out!", delegate: nil, cancelButtonTitle: "Ok")
-                                        alertMessage.show()
+                                       else
+                                       {
+                                          //To create a pop up alert message
+                                          var alertMessage = UIAlertView(title: "Note", message: "You have already checked out!", delegate: nil, cancelButtonTitle: "Ok")
+                                          alertMessage.show()
                                         
                                         }
-                                        }
+                                       
+                                    }
                             }
                            
                            
@@ -224,30 +236,30 @@ class CheckOut: UIViewController, UITextFieldDelegate
                             //get tabBarController if there is one, and then change the view to index 1 (which is the second view controller
                             self.tabBarController?.selectedIndex = 0
                             
-                                        if (object["Reminders"]  != nil) {
+                                        if (object["Reminders"]  != nil)
+                                        {
                                             var reminderMessage=object["Reminders"] as String
                                         
-                            var alertMessage = UIAlertView(title: nil, message: "You have been checked out. Thanks for participating!" + reminderMessage, delegate: nil, cancelButtonTitle: "OK")
-                            alertMessage.show()
-                            }
-                                        
-                                        else{
+                                            var alertMessage = UIAlertView(title: nil, message: "You have been checked out. Thanks for participating!" + reminderMessage, delegate: nil, cancelButtonTitle: "OK")
+                                            alertMessage.show()
+                                        }
+                                        else
+                                        {
                                             
                                             var alertMessage = UIAlertView(title: nil, message: "You have been checked out. Thanks for participating!", delegate: nil, cancelButtonTitle: "OK")
                                             alertMessage.show()
                                         }
                                         
-                                        
-                           // self.checkOutConfirmLabel.text = "You Have Checked Out!"
-                           
-                        }
-                                    else {
+                                       
+                                    }
+                                    else
+                                    {
                                         //If someone has not checked in
                                         self.noArrivalTime()
                                     }
                 
-            }
-                            //IF EMAIL DOESNT EXIST
+                        }
+                        //IF EMAIL DOESNT EXIST
                         else
                         {
                            
